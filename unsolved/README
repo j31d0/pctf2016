@@ -1,0 +1,10 @@
+So I have this key signing service, but it's next to this big.. glowy thing.
+If I ask it to sign the same thing twice, I sometimes get different results!
+
+I don't think I have a bug in my code.. all I do is
+ d = radioactive_storage.load("d")
+ n = radioactive_storage.load("n")
+ g = int(raw_input())
+ return pow(g, d, n), n
+
+I attached a log of what I mean, maybe it will help you diagnose the issue.
