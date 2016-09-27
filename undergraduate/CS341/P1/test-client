@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ ./run-client < test/burrito_encrypted.txt > test/burrito_output.txt
+diff -i test/burrito.txt test/burrito_output.txt
+./run-client < test/crossbow_encrypted.txt > test/crossbow_output.txt
+diff -i test/crossbow.txt test/crossbow_output.txt
+./run-client < test/sample_encrypted.txt > test/sample_output.txt
+diff -i test/sample.txt test/sample_output.txt
